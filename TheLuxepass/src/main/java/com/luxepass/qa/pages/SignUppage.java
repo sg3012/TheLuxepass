@@ -69,7 +69,7 @@ public class SignUppage extends TestBase {
 
 	@FindBy(xpath = "//h2[text()='Verify Account']//parent::div[@class='login-heading']//following-sibling::form[contains(@class,'pop-num-form')]//div[@class='control']//input[@formcontrolname='otp']")
 	WebElement otpinput;
-	
+
 	@FindBy(xpath = "//h2[text()='Verify Account']//parent::div[@class='login-heading']//following-sibling::form[contains(@class,'pop-num-form')]//div[contains(@class,'verify-btn')]//button[contains(text(),'Submit')]")
 	WebElement verifyaccountsubmitbtn;
 	@FindBy(xpath = "//a[text()='Resend code']")
@@ -113,28 +113,14 @@ public class SignUppage extends TestBase {
 	public LoginPage signup(String firstname, String lastname, String email, String password, String confirmpassword)
 //	public HomePage signup()
 			throws InterruptedException {
-
+		int unreadmsgcount,temp;
+		Folder folder =null; 
+		Store store=null; 
+		Message[] unreadmessages;
+		Flags seen; 
+		FlagTerm unseenFlagTerm; 
 		BodyPart plaintextpart = null;
 		BodyPart htmlpart = null;
-		loginsignupbtn.click();
-		signuplink.click();
-//		firstnameinput.sendKeys(firstname);
-//		lastnameinput.sendKeys(lastname);
-//		emailinput.sendKeys(email);
-//		enterpasswordinput.sendKeys(password);
-//		enterconfirmpasswordinput.sendKeys(confirmpassword);
-//
-//		clickTandC_Checkbox(tandccheckbox, driver);
-//		Thread.sleep(1000);
-//		signupbtn.click();
-		verifyemaillink.click(); 
-		nonactiveemail.sendKeys(prop.getProperty("Email"));
-		verifyaccountsubmitbtn.click();
-//		Thread.sleep(240000);
-	    wait = new WebDriverWait(driver, TestUtil.implicitWait);
-		verifybtn = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
-				"//h2[text()='Verify Account']//parent::div[@class='login-heading']//following-sibling::form[@class='pop-num-form ng-untouched ng-pristine ng-invalid']//button[text()='Verify']")));
-		// TODO Auto-generated method stub
 
 		// Creating properties class object and Initializing all the properties for
 		// receiving mail :
@@ -156,35 +142,58 @@ public class SignUppage extends TestBase {
 
 		try {
 			// Creating store class object :
-			Store store = session.getStore("imaps");
+			store = session.getStore("imaps");
 
 			// Connect to the imap server :
 			store.connect("imap.gmail.com", prop.getProperty("username"), prop.getProperty("passphrase"));
 
 			// Create Folder class object of type "INBOX" :
-			Folder folder = store.getFolder("Inbox");
+		     folder = store.getFolder("Inbox");
 
 			// Open the folder in Read Only mode :
 			folder.open(Folder.READ_WRITE);
 
 			// Retrieve the Unseen messages in an array of type Message :
-			 Flags seen = new Flags(Flags.Flag.SEEN);
-			 FlagTerm unseenFlagTerm = new FlagTerm(seen, false);
-			 Message[] unreadmessages = folder.search(unseenFlagTerm);
-   
+			seen = new Flags(Flags.Flag.SEEN);
+			unseenFlagTerm = new FlagTerm(seen, false);
+			unreadmessages = folder.search(unseenFlagTerm);
+
 			System.out.println("Flags Supported by the folder: " + folder.getPermanentFlags());
-//			System.out.println("Flags Supported by the system: " + flag.getSystemFlags().toString());
-			int unreadmsgcount = unreadmessages.length; 
-			int temp = unreadmsgcount; 
+//					System.out.println("Flags Supported by the system: " + flag.getSystemFlags().toString());
+			unreadmsgcount = unreadmessages.length;
+			temp = unreadmsgcount;
 			System.out.println("INITIAL UNSEEN messages in Inbox: " + unreadmsgcount);
-			
-			while(unreadmsgcount==temp)
-			 {	folder.close();                        /* These  2 steps are done 
-			                                            to refresh count of messages in the folder*/
-			    folder.open(Folder.READ_WRITE); 
+		
+
+			loginsignupbtn.click();
+			signuplink.click();
+			firstnameinput.sendKeys(firstname);
+			lastnameinput.sendKeys(lastname);
+			emailinput.sendKeys(email);
+			enterpasswordinput.sendKeys(password);
+			enterconfirmpasswordinput.sendKeys(confirmpassword);
+
+			clickTandC_Checkbox(tandccheckbox, driver);
+//		Thread.sleep(1000); 
+
+			signupbtn.click();
+//		verifyemaillink.click(); 
+//		nonactiveemail.sendKeys(prop.getProperty("Email"));
+//		verifyaccountsubmitbtn.click();
+//		Thread.sleep(240000);
+			wait = new WebDriverWait(driver, TestUtil.implicitWait);
+			verifybtn = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
+					"//h2[text()='Verify Account']//parent::div[@class='login-heading']//following-sibling::form[@class='pop-num-form ng-untouched ng-pristine ng-invalid']//button[text()='Verify']")));
+			// TODO Auto-generated method stub
+			while (unreadmsgcount == temp) {
+				System.out.println("INSIDE COUNT LOOP");
+				folder.close(); /*
+								 * These 2 steps are done to refresh count of messages in the folder
+								 */
+				folder.open(Folder.READ_WRITE);
 				unreadmessages = folder.search(unseenFlagTerm);
 				unreadmsgcount = unreadmessages.length;
-			 }  
+			}
 			System.out.println("Total UNSEEN in Inbox: " + unreadmsgcount);
 
 			// Traverse the array and print all the messages :
@@ -278,9 +287,9 @@ public class SignUppage extends TestBase {
 			e.printStackTrace();
 		}
 
-	System.out.println("Verify button visibility: "+verifybtn.isDisplayed());
-	     otpinput.sendKeys(OTP);
-		 clickverifybutton(verifybtn, driver);
+		System.out.println("Verify button visibility: " + verifybtn.isDisplayed());
+		otpinput.sendKeys(OTP);
+		clickverifybutton(verifybtn, driver);
 		return new LoginPage();
 
 	}
