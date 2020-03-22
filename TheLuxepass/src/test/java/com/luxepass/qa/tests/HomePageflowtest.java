@@ -46,7 +46,7 @@ public class HomePageflowtest extends TestBase {
 										 * Created a LoginPage Class Object and will call it's constructor which will
 										 * eventually initialize the Object
 										 */
-		homepage = loginpage.login(prop.getProperty("email"), prop.getProperty(
+		homepage = loginpage.login(prop.getProperty("Email"), prop.getProperty(
 				"password")); /*
 								 * With this statement the home page reference variable will eventually point to
 								 * the home page object as login() method returns the Homepage object

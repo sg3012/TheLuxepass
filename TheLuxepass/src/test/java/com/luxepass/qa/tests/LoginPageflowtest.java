@@ -50,7 +50,7 @@ public class LoginPageflowtest extends TestBase {
    @Test(priority=3)
    public void loginPagelogintest() throws InterruptedException
    {
-	   homepage=loginpage.login(prop.getProperty("email"), prop.getProperty("password"));
+	   homepage=loginpage.login(prop.getProperty("Email"), prop.getProperty("password"));
 	   Thread.sleep(2000);
 	   
    }
