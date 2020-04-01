@@ -35,7 +35,7 @@ public class Howitworksflowtest extends TestBase {
 		loginpage = new LoginPage();
 		homepage = new HomePage();
 		loginpage = new LoginPage();
-		howitworks = new HowitWorksPage();
+		howitworks = new HowitWorksPage()
 		homepage = loginpage.login(prop.getProperty("Email"), prop.getProperty(
 				"password")); /*
 								 * With this statement the home page reference variable will eventually point to
