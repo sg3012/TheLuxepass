@@ -2,422 +2,422 @@
 <testng-results skipped="0" failed="0" ignored="0" total="33" passed="33">
   <reporter-output>
   </reporter-output>
-  <suite name="TheLuxepass_web_app_test_Automation_suite" duration-ms="600913" started-at="2020-04-01T19:46:08 IST" finished-at="2020-04-01T19:56:09 IST">
+  <suite name="TheLuxepass_web_app_test_Automation_suite" duration-ms="702641" started-at="2020-04-01T20:38:20 IST" finished-at="2020-04-01T20:50:03 IST">
     <groups>
     </groups>
-    <test name="TheLuxepass_app_test_cases" duration-ms="600913" started-at="2020-04-01T19:46:08 IST" finished-at="2020-04-01T19:56:09 IST">
+    <test name="TheLuxepass_app_test_cases" duration-ms="702641" started-at="2020-04-01T20:38:20 IST" finished-at="2020-04-01T20:50:03 IST">
       <class name="com.luxepass.qa.tests.Myorderspageflowtest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.luxepass.qa.tests.Myorderspageflowtest@1f554b06]" name="setUp" is-config="true" duration-ms="14859" started-at="2020-04-01T19:54:14 IST" finished-at="2020-04-01T19:54:29 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.luxepass.qa.tests.Myorderspageflowtest@1f554b06]" name="setUp" is-config="true" duration-ms="20240" started-at="2020-04-01T20:47:42 IST" finished-at="2020-04-01T20:48:02 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="Myorderslabeltest()[pri:1, instance:com.luxepass.qa.tests.Myorderspageflowtest@1f554b06]" name="Myorderslabeltest" duration-ms="53" started-at="2020-04-01T19:54:29 IST" finished-at="2020-04-01T19:54:29 IST">
+        <test-method status="PASS" signature="Myorderslabeltest()[pri:1, instance:com.luxepass.qa.tests.Myorderspageflowtest@1f554b06]" name="Myorderslabeltest" duration-ms="56" started-at="2020-04-01T20:48:02 IST" finished-at="2020-04-01T20:48:02 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Myorderslabeltest -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.luxepass.qa.tests.Myorderspageflowtest@1f554b06]" name="teardown" is-config="true" duration-ms="733" started-at="2020-04-01T19:54:29 IST" finished-at="2020-04-01T19:54:30 IST">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.luxepass.qa.tests.Myorderspageflowtest@1f554b06]" name="teardown" is-config="true" duration-ms="800" started-at="2020-04-01T20:48:02 IST" finished-at="2020-04-01T20:48:03 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.luxepass.qa.tests.Myorderspageflowtest -->
       <class name="com.luxepass.qa.tests.Hotellistingpageflowtest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.luxepass.qa.tests.Hotellistingpageflowtest@614ddd49]" name="setUp" is-config="true" duration-ms="15840" started-at="2020-04-01T19:53:57 IST" finished-at="2020-04-01T19:54:13 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.luxepass.qa.tests.Hotellistingpageflowtest@614ddd49]" name="setUp" is-config="true" duration-ms="15259" started-at="2020-04-01T20:47:26 IST" finished-at="2020-04-01T20:47:41 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="Hotellistinglabeltest()[pri:1, instance:com.luxepass.qa.tests.Hotellistingpageflowtest@614ddd49]" name="Hotellistinglabeltest" duration-ms="45" started-at="2020-04-01T19:54:13 IST" finished-at="2020-04-01T19:54:13 IST">
+        <test-method status="PASS" signature="Hotellistinglabeltest()[pri:1, instance:com.luxepass.qa.tests.Hotellistingpageflowtest@614ddd49]" name="Hotellistinglabeltest" duration-ms="44" started-at="2020-04-01T20:47:41 IST" finished-at="2020-04-01T20:47:41 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Hotellistinglabeltest -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.luxepass.qa.tests.Hotellistingpageflowtest@614ddd49]" name="teardown" is-config="true" duration-ms="770" started-at="2020-04-01T19:54:13 IST" finished-at="2020-04-01T19:54:14 IST">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.luxepass.qa.tests.Hotellistingpageflowtest@614ddd49]" name="teardown" is-config="true" duration-ms="749" started-at="2020-04-01T20:47:41 IST" finished-at="2020-04-01T20:47:42 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.luxepass.qa.tests.Hotellistingpageflowtest -->
       <class name="com.luxepass.qa.tests.HomePageflowtest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="setUp" is-config="true" duration-ms="19814" started-at="2020-04-01T19:46:08 IST" finished-at="2020-04-01T19:46:28 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="setUp" is-config="true" duration-ms="17020" started-at="2020-04-01T20:38:20 IST" finished-at="2020-04-01T20:38:37 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="homepageTitletest()[pri:1, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="homepageTitletest" duration-ms="768" started-at="2020-04-01T19:46:28 IST" finished-at="2020-04-01T19:46:29 IST">
+        <test-method status="PASS" signature="homepageTitletest()[pri:1, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="homepageTitletest" duration-ms="17" started-at="2020-04-01T20:38:37 IST" finished-at="2020-04-01T20:38:37 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homepageTitletest -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="teardown" is-config="true" duration-ms="1076" started-at="2020-04-01T19:46:29 IST" finished-at="2020-04-01T19:46:30 IST">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="teardown" is-config="true" duration-ms="761" started-at="2020-04-01T20:38:37 IST" finished-at="2020-04-01T20:38:38 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="setUp" is-config="true" duration-ms="15868" started-at="2020-04-01T19:46:30 IST" finished-at="2020-04-01T19:46:46 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="setUp" is-config="true" duration-ms="16795" started-at="2020-04-01T20:38:38 IST" finished-at="2020-04-01T20:38:55 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="howitworkstest()[pri:2, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="howitworkstest" duration-ms="1705" started-at="2020-04-01T19:46:46 IST" finished-at="2020-04-01T19:46:47 IST">
+        <test-method status="PASS" signature="howitworkstest()[pri:2, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="howitworkstest" duration-ms="1706" started-at="2020-04-01T20:38:55 IST" finished-at="2020-04-01T20:38:57 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- howitworkstest -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="teardown" is-config="true" duration-ms="771" started-at="2020-04-01T19:46:47 IST" finished-at="2020-04-01T19:46:48 IST">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="teardown" is-config="true" duration-ms="765" started-at="2020-04-01T20:38:57 IST" finished-at="2020-04-01T20:38:57 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="setUp" is-config="true" duration-ms="16783" started-at="2020-04-01T19:46:48 IST" finished-at="2020-04-01T19:47:05 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="setUp" is-config="true" duration-ms="16205" started-at="2020-04-01T20:38:57 IST" finished-at="2020-04-01T20:39:14 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="browsehoteltest()[pri:3, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="browsehoteltest" duration-ms="1710" started-at="2020-04-01T19:47:05 IST" finished-at="2020-04-01T19:47:07 IST">
+        <test-method status="PASS" signature="browsehoteltest()[pri:3, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="browsehoteltest" duration-ms="2552" started-at="2020-04-01T20:39:14 IST" finished-at="2020-04-01T20:39:16 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browsehoteltest -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="teardown" is-config="true" duration-ms="754" started-at="2020-04-01T19:47:07 IST" finished-at="2020-04-01T19:47:08 IST">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="teardown" is-config="true" duration-ms="749" started-at="2020-04-01T20:39:16 IST" finished-at="2020-04-01T20:39:17 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="setUp" is-config="true" duration-ms="14390" started-at="2020-04-01T19:47:08 IST" finished-at="2020-04-01T19:47:22 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="setUp" is-config="true" duration-ms="19493" started-at="2020-04-01T20:39:17 IST" finished-at="2020-04-01T20:39:36 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="myOrderstest()[pri:4, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="myOrderstest" duration-ms="1728" started-at="2020-04-01T19:47:22 IST" finished-at="2020-04-01T19:47:24 IST">
+        <test-method status="PASS" signature="myOrderstest()[pri:4, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="myOrderstest" duration-ms="3053" started-at="2020-04-01T20:39:36 IST" finished-at="2020-04-01T20:39:40 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- myOrderstest -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="teardown" is-config="true" duration-ms="773" started-at="2020-04-01T19:47:24 IST" finished-at="2020-04-01T19:47:24 IST">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="teardown" is-config="true" duration-ms="754" started-at="2020-04-01T20:39:40 IST" finished-at="2020-04-01T20:39:40 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="setUp" is-config="true" duration-ms="14557" started-at="2020-04-01T19:47:24 IST" finished-at="2020-04-01T19:47:39 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="setUp" is-config="true" duration-ms="15161" started-at="2020-04-01T20:39:40 IST" finished-at="2020-04-01T20:39:55 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="myprofileicontest()[pri:5, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="myprofileicontest" duration-ms="1569" started-at="2020-04-01T19:47:39 IST" finished-at="2020-04-01T19:47:41 IST">
+        <test-method status="PASS" signature="myprofileicontest()[pri:5, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="myprofileicontest" duration-ms="9958" started-at="2020-04-01T20:39:55 IST" finished-at="2020-04-01T20:40:05 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- myprofileicontest -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="teardown" is-config="true" duration-ms="806" started-at="2020-04-01T19:47:41 IST" finished-at="2020-04-01T19:47:41 IST">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="teardown" is-config="true" duration-ms="753" started-at="2020-04-01T20:40:05 IST" finished-at="2020-04-01T20:40:06 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="setUp" is-config="true" duration-ms="14413" started-at="2020-04-01T19:47:41 IST" finished-at="2020-04-01T19:47:56 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="setUp" is-config="true" duration-ms="15875" started-at="2020-04-01T20:40:06 IST" finished-at="2020-04-01T20:40:22 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="myaccounttest()[pri:6, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="myaccounttest" duration-ms="1929" started-at="2020-04-01T19:47:56 IST" finished-at="2020-04-01T19:47:58 IST">
+        <test-method status="PASS" signature="myaccounttest()[pri:6, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="myaccounttest" duration-ms="1921" started-at="2020-04-01T20:40:22 IST" finished-at="2020-04-01T20:40:24 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- myaccounttest -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="teardown" is-config="true" duration-ms="1083" started-at="2020-04-01T19:47:58 IST" finished-at="2020-04-01T19:47:59 IST">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="teardown" is-config="true" duration-ms="752" started-at="2020-04-01T20:40:24 IST" finished-at="2020-04-01T20:40:25 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="setUp" is-config="true" duration-ms="15042" started-at="2020-04-01T19:47:59 IST" finished-at="2020-04-01T19:48:14 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="setUp" is-config="true" duration-ms="15338" started-at="2020-04-01T20:40:25 IST" finished-at="2020-04-01T20:40:40 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="poolfiltertest()[pri:7, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="poolfiltertest" duration-ms="1656" started-at="2020-04-01T19:48:14 IST" finished-at="2020-04-01T19:48:15 IST">
+        <test-method status="PASS" signature="poolfiltertest()[pri:7, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="poolfiltertest" duration-ms="7203" started-at="2020-04-01T20:40:40 IST" finished-at="2020-04-01T20:40:47 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- poolfiltertest -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="teardown" is-config="true" duration-ms="739" started-at="2020-04-01T19:48:15 IST" finished-at="2020-04-01T19:48:16 IST">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="teardown" is-config="true" duration-ms="740" started-at="2020-04-01T20:40:47 IST" finished-at="2020-04-01T20:40:48 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="setUp" is-config="true" duration-ms="14426" started-at="2020-04-01T19:48:16 IST" finished-at="2020-04-01T19:48:31 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="setUp" is-config="true" duration-ms="18003" started-at="2020-04-01T20:40:48 IST" finished-at="2020-04-01T20:41:06 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="gymfiltertest()[pri:8, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="gymfiltertest" duration-ms="2644" started-at="2020-04-01T19:48:31 IST" finished-at="2020-04-01T19:48:33 IST">
+        <test-method status="PASS" signature="gymfiltertest()[pri:8, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="gymfiltertest" duration-ms="1738" started-at="2020-04-01T20:41:06 IST" finished-at="2020-04-01T20:41:08 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- gymfiltertest -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="teardown" is-config="true" duration-ms="735" started-at="2020-04-01T19:48:33 IST" finished-at="2020-04-01T19:48:34 IST">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="teardown" is-config="true" duration-ms="737" started-at="2020-04-01T20:41:08 IST" finished-at="2020-04-01T20:41:08 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="setUp" is-config="true" duration-ms="13850" started-at="2020-04-01T19:48:34 IST" finished-at="2020-04-01T19:48:48 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="setUp" is-config="true" duration-ms="16115" started-at="2020-04-01T20:41:08 IST" finished-at="2020-04-01T20:41:25 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="spasalonfiltertest()[pri:9, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="spasalonfiltertest" duration-ms="1997" started-at="2020-04-01T19:48:48 IST" finished-at="2020-04-01T19:48:50 IST">
+        <test-method status="PASS" signature="spasalonfiltertest()[pri:9, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="spasalonfiltertest" duration-ms="6428" started-at="2020-04-01T20:41:25 IST" finished-at="2020-04-01T20:41:31 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- spasalonfiltertest -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="teardown" is-config="true" duration-ms="737" started-at="2020-04-01T19:48:50 IST" finished-at="2020-04-01T19:48:51 IST">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="teardown" is-config="true" duration-ms="759" started-at="2020-04-01T20:41:31 IST" finished-at="2020-04-01T20:41:32 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="setUp" is-config="true" duration-ms="15928" started-at="2020-04-01T19:48:51 IST" finished-at="2020-04-01T19:49:07 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="setUp" is-config="true" duration-ms="16396" started-at="2020-04-01T20:41:32 IST" finished-at="2020-04-01T20:41:48 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="addtofavoritestest()[pri:10, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="addtofavoritestest" duration-ms="20162" started-at="2020-04-01T19:49:07 IST" finished-at="2020-04-01T19:49:27 IST">
+        <test-method status="PASS" signature="addtofavoritestest()[pri:10, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="addtofavoritestest" duration-ms="24527" started-at="2020-04-01T20:41:48 IST" finished-at="2020-04-01T20:42:13 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addtofavoritestest -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="teardown" is-config="true" duration-ms="858" started-at="2020-04-01T19:49:27 IST" finished-at="2020-04-01T19:49:28 IST">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="teardown" is-config="true" duration-ms="749" started-at="2020-04-01T20:42:13 IST" finished-at="2020-04-01T20:42:13 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="setUp" is-config="true" duration-ms="15891" started-at="2020-04-01T19:49:28 IST" finished-at="2020-04-01T19:49:43 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="setUp" is-config="true" duration-ms="17487" started-at="2020-04-01T20:42:13 IST" finished-at="2020-04-01T20:42:31 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="browsemorehoteltest()[pri:11, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="browsemorehoteltest" duration-ms="1826" started-at="2020-04-01T19:49:43 IST" finished-at="2020-04-01T19:49:45 IST">
+        <test-method status="PASS" signature="browsemorehoteltest()[pri:11, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="browsemorehoteltest" duration-ms="6846" started-at="2020-04-01T20:42:31 IST" finished-at="2020-04-01T20:42:38 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browsemorehoteltest -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="teardown" is-config="true" duration-ms="725" started-at="2020-04-01T19:49:45 IST" finished-at="2020-04-01T19:49:46 IST">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="teardown" is-config="true" duration-ms="732" started-at="2020-04-01T20:42:38 IST" finished-at="2020-04-01T20:42:39 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="setUp" is-config="true" duration-ms="14290" started-at="2020-04-01T19:49:46 IST" finished-at="2020-04-01T19:50:00 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="setUp" is-config="true" duration-ms="14731" started-at="2020-04-01T20:42:39 IST" finished-at="2020-04-01T20:42:53 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="browsemorehowitworkstest()[pri:13, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="browsemorehowitworkstest" duration-ms="1709" started-at="2020-04-01T19:50:00 IST" finished-at="2020-04-01T19:50:02 IST">
+        <test-method status="PASS" signature="browsemorehowitworkstest()[pri:13, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="browsemorehowitworkstest" duration-ms="1734" started-at="2020-04-01T20:42:53 IST" finished-at="2020-04-01T20:42:55 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browsemorehowitworkstest -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="teardown" is-config="true" duration-ms="729" started-at="2020-04-01T19:50:02 IST" finished-at="2020-04-01T19:50:03 IST">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="teardown" is-config="true" duration-ms="745" started-at="2020-04-01T20:42:55 IST" finished-at="2020-04-01T20:42:56 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="setUp" is-config="true" duration-ms="15998" started-at="2020-04-01T19:50:03 IST" finished-at="2020-04-01T19:50:19 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="setUp" is-config="true" duration-ms="14831" started-at="2020-04-01T20:42:56 IST" finished-at="2020-04-01T20:43:11 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="sendsmsapplinktest()[pri:14, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="sendsmsapplinktest" duration-ms="2317" started-at="2020-04-01T19:50:19 IST" finished-at="2020-04-01T19:50:21 IST">
+        <test-method status="PASS" signature="sendsmsapplinktest()[pri:14, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="sendsmsapplinktest" duration-ms="2224" started-at="2020-04-01T20:43:11 IST" finished-at="2020-04-01T20:43:13 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sendsmsapplinktest -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="teardown" is-config="true" duration-ms="1059" started-at="2020-04-01T19:50:21 IST" finished-at="2020-04-01T19:50:22 IST">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="teardown" is-config="true" duration-ms="773" started-at="2020-04-01T20:43:13 IST" finished-at="2020-04-01T20:43:14 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="setUp" is-config="true" duration-ms="14338" started-at="2020-04-01T19:50:22 IST" finished-at="2020-04-01T19:50:36 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="setUp" is-config="true" duration-ms="16627" started-at="2020-04-01T20:43:14 IST" finished-at="2020-04-01T20:43:30 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="sendemailpplinktest()[pri:15, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="sendemailpplinktest" duration-ms="350" started-at="2020-04-01T19:50:36 IST" finished-at="2020-04-01T19:50:37 IST">
+        <test-method status="PASS" signature="sendemailpplinktest()[pri:15, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="sendemailpplinktest" duration-ms="2251" started-at="2020-04-01T20:43:30 IST" finished-at="2020-04-01T20:43:32 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sendemailpplinktest -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="teardown" is-config="true" duration-ms="770" started-at="2020-04-01T19:50:37 IST" finished-at="2020-04-01T19:50:38 IST">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="teardown" is-config="true" duration-ms="763" started-at="2020-04-01T20:43:32 IST" finished-at="2020-04-01T20:43:33 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="setUp" is-config="true" duration-ms="13973" started-at="2020-04-01T19:50:38 IST" finished-at="2020-04-01T19:50:52 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="setUp" is-config="true" duration-ms="15186" started-at="2020-04-01T20:43:33 IST" finished-at="2020-04-01T20:43:48 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="playstoredownloadtest()[pri:16, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="playstoredownloadtest" duration-ms="4404" started-at="2020-04-01T19:50:52 IST" finished-at="2020-04-01T19:50:56 IST">
+        <test-method status="PASS" signature="playstoredownloadtest()[pri:16, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="playstoredownloadtest" duration-ms="4194" started-at="2020-04-01T20:43:48 IST" finished-at="2020-04-01T20:43:53 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- playstoredownloadtest -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="teardown" is-config="true" duration-ms="757" started-at="2020-04-01T19:50:56 IST" finished-at="2020-04-01T19:50:57 IST">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="teardown" is-config="true" duration-ms="790" started-at="2020-04-01T20:43:53 IST" finished-at="2020-04-01T20:43:53 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="setUp" is-config="true" duration-ms="14039" started-at="2020-04-01T19:50:57 IST" finished-at="2020-04-01T19:51:11 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="setUp" is-config="true" duration-ms="16900" started-at="2020-04-01T20:43:53 IST" finished-at="2020-04-01T20:44:10 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="appstoredownloadtest()[pri:17, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="appstoredownloadtest" duration-ms="4593" started-at="2020-04-01T19:51:11 IST" finished-at="2020-04-01T19:51:15 IST">
+        <test-method status="PASS" signature="appstoredownloadtest()[pri:17, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="appstoredownloadtest" duration-ms="6001" started-at="2020-04-01T20:44:10 IST" finished-at="2020-04-01T20:44:16 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- appstoredownloadtest -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="teardown" is-config="true" duration-ms="762" started-at="2020-04-01T19:51:15 IST" finished-at="2020-04-01T19:51:16 IST">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="teardown" is-config="true" duration-ms="781" started-at="2020-04-01T20:44:16 IST" finished-at="2020-04-01T20:44:17 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="setUp" is-config="true" duration-ms="14908" started-at="2020-04-01T19:51:16 IST" finished-at="2020-04-01T19:51:31 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="setUp" is-config="true" duration-ms="16799" started-at="2020-04-01T20:44:17 IST" finished-at="2020-04-01T20:44:34 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="sendsubscribeemailtest()[pri:18, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="sendsubscribeemailtest" duration-ms="346" started-at="2020-04-01T19:51:31 IST" finished-at="2020-04-01T19:51:31 IST">
+        <test-method status="PASS" signature="sendsubscribeemailtest()[pri:18, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="sendsubscribeemailtest" duration-ms="3011" started-at="2020-04-01T20:44:34 IST" finished-at="2020-04-01T20:44:37 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sendsubscribeemailtest -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="teardown" is-config="true" duration-ms="817" started-at="2020-04-01T19:51:31 IST" finished-at="2020-04-01T19:51:32 IST">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="teardown" is-config="true" duration-ms="758" started-at="2020-04-01T20:44:37 IST" finished-at="2020-04-01T20:44:38 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="setUp" is-config="true" duration-ms="15095" started-at="2020-04-01T19:51:32 IST" finished-at="2020-04-01T19:51:47 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="setUp" is-config="true" duration-ms="15626" started-at="2020-04-01T20:44:38 IST" finished-at="2020-04-01T20:44:53 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="navigatefooterFAQtest()[pri:19, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="navigatefooterFAQtest" duration-ms="2072" started-at="2020-04-01T19:51:47 IST" finished-at="2020-04-01T19:51:49 IST">
+        <test-method status="PASS" signature="navigatefooterFAQtest()[pri:19, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="navigatefooterFAQtest" duration-ms="13762" started-at="2020-04-01T20:44:53 IST" finished-at="2020-04-01T20:45:07 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigatefooterFAQtest -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="teardown" is-config="true" duration-ms="821" started-at="2020-04-01T19:51:49 IST" finished-at="2020-04-01T19:51:50 IST">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="teardown" is-config="true" duration-ms="726" started-at="2020-04-01T20:45:07 IST" finished-at="2020-04-01T20:45:08 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="setUp" is-config="true" duration-ms="15348" started-at="2020-04-01T19:51:50 IST" finished-at="2020-04-01T19:52:05 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="setUp" is-config="true" duration-ms="16452" started-at="2020-04-01T20:45:08 IST" finished-at="2020-04-01T20:45:24 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="navigatefooterTandctest()[pri:20, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="navigatefooterTandctest" duration-ms="3108" started-at="2020-04-01T19:52:05 IST" finished-at="2020-04-01T19:52:09 IST">
+        <test-method status="PASS" signature="navigatefooterTandctest()[pri:20, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="navigatefooterTandctest" duration-ms="5664" started-at="2020-04-01T20:45:24 IST" finished-at="2020-04-01T20:45:30 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigatefooterTandctest -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="teardown" is-config="true" duration-ms="813" started-at="2020-04-01T19:52:09 IST" finished-at="2020-04-01T19:52:09 IST">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="teardown" is-config="true" duration-ms="742" started-at="2020-04-01T20:45:30 IST" finished-at="2020-04-01T20:45:31 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="setUp" is-config="true" duration-ms="14957" started-at="2020-04-01T19:52:09 IST" finished-at="2020-04-01T19:52:24 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="setUp" is-config="true" duration-ms="16098" started-at="2020-04-01T20:45:31 IST" finished-at="2020-04-01T20:45:47 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="navigatefooterPrivacypolicytest()[pri:21, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="navigatefooterPrivacypolicytest" duration-ms="2664" started-at="2020-04-01T19:52:24 IST" finished-at="2020-04-01T19:52:27 IST">
+        <test-method status="PASS" signature="navigatefooterPrivacypolicytest()[pri:21, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="navigatefooterPrivacypolicytest" duration-ms="1707" started-at="2020-04-01T20:45:47 IST" finished-at="2020-04-01T20:45:48 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigatefooterPrivacypolicytest -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="teardown" is-config="true" duration-ms="748" started-at="2020-04-01T19:52:27 IST" finished-at="2020-04-01T19:52:28 IST">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="teardown" is-config="true" duration-ms="743" started-at="2020-04-01T20:45:48 IST" finished-at="2020-04-01T20:45:49 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="setUp" is-config="true" duration-ms="15188" started-at="2020-04-01T19:52:28 IST" finished-at="2020-04-01T19:52:43 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="setUp" is-config="true" duration-ms="14619" started-at="2020-04-01T20:45:49 IST" finished-at="2020-04-01T20:46:04 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="navigatefooterContactustest()[pri:22, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="navigatefooterContactustest" duration-ms="1702" started-at="2020-04-01T19:52:43 IST" finished-at="2020-04-01T19:52:45 IST">
+        <test-method status="PASS" signature="navigatefooterContactustest()[pri:22, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="navigatefooterContactustest" duration-ms="1688" started-at="2020-04-01T20:46:04 IST" finished-at="2020-04-01T20:46:05 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigatefooterContactustest -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="teardown" is-config="true" duration-ms="738" started-at="2020-04-01T19:52:45 IST" finished-at="2020-04-01T19:52:45 IST">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="teardown" is-config="true" duration-ms="734" started-at="2020-04-01T20:46:05 IST" finished-at="2020-04-01T20:46:06 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="setUp" is-config="true" duration-ms="15148" started-at="2020-04-01T19:52:45 IST" finished-at="2020-04-01T19:53:01 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="setUp" is-config="true" duration-ms="15350" started-at="2020-04-01T20:46:06 IST" finished-at="2020-04-01T20:46:22 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="navigatefooterPartnerwithustest()[pri:23, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="navigatefooterPartnerwithustest" duration-ms="1723" started-at="2020-04-01T19:53:01 IST" finished-at="2020-04-01T19:53:02 IST">
+        <test-method status="PASS" signature="navigatefooterPartnerwithustest()[pri:23, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="navigatefooterPartnerwithustest" duration-ms="3420" started-at="2020-04-01T20:46:22 IST" finished-at="2020-04-01T20:46:25 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigatefooterPartnerwithustest -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="teardown" is-config="true" duration-ms="772" started-at="2020-04-01T19:53:02 IST" finished-at="2020-04-01T19:53:03 IST">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="teardown" is-config="true" duration-ms="743" started-at="2020-04-01T20:46:25 IST" finished-at="2020-04-01T20:46:26 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="setUp" is-config="true" duration-ms="16363" started-at="2020-04-01T19:53:03 IST" finished-at="2020-04-01T19:53:19 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="setUp" is-config="true" duration-ms="15321" started-at="2020-04-01T20:46:26 IST" finished-at="2020-04-01T20:46:41 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="navigateInstasocialpagetest()[pri:24, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="navigateInstasocialpagetest" duration-ms="1751" started-at="2020-04-01T19:53:19 IST" finished-at="2020-04-01T19:53:21 IST">
+        <test-method status="PASS" signature="navigateInstasocialpagetest()[pri:24, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="navigateInstasocialpagetest" duration-ms="7340" started-at="2020-04-01T20:46:41 IST" finished-at="2020-04-01T20:46:48 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigateInstasocialpagetest -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="teardown" is-config="true" duration-ms="797" started-at="2020-04-01T19:53:21 IST" finished-at="2020-04-01T19:53:22 IST">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="teardown" is-config="true" duration-ms="748" started-at="2020-04-01T20:46:48 IST" finished-at="2020-04-01T20:46:49 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="setUp" is-config="true" duration-ms="14738" started-at="2020-04-01T19:53:22 IST" finished-at="2020-04-01T19:53:37 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="setUp" is-config="true" duration-ms="15494" started-at="2020-04-01T20:46:49 IST" finished-at="2020-04-01T20:47:05 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="navigateFBsocialpagetest()[pri:25, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="navigateFBsocialpagetest" duration-ms="2793" started-at="2020-04-01T19:53:37 IST" finished-at="2020-04-01T19:53:39 IST">
+        <test-method status="PASS" signature="navigateFBsocialpagetest()[pri:25, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="navigateFBsocialpagetest" duration-ms="1970" started-at="2020-04-01T20:47:05 IST" finished-at="2020-04-01T20:47:07 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigateFBsocialpagetest -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="teardown" is-config="true" duration-ms="774" started-at="2020-04-01T19:53:39 IST" finished-at="2020-04-01T19:53:40 IST">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.luxepass.qa.tests.HomePageflowtest@1e6d1014]" name="teardown" is-config="true" duration-ms="776" started-at="2020-04-01T20:47:07 IST" finished-at="2020-04-01T20:47:07 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.luxepass.qa.tests.HomePageflowtest -->
       <class name="com.luxepass.qa.tests.PrivacypolicyPageflowtest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.luxepass.qa.tests.PrivacypolicyPageflowtest@3fd7a715]" name="setUp" is-config="true" duration-ms="14153" started-at="2020-04-01T19:55:38 IST" finished-at="2020-04-01T19:55:52 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.luxepass.qa.tests.PrivacypolicyPageflowtest@3fd7a715]" name="setUp" is-config="true" duration-ms="24640" started-at="2020-04-01T20:49:21 IST" finished-at="2020-04-01T20:49:46 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="Privacypolicylabeltest()[pri:1, instance:com.luxepass.qa.tests.PrivacypolicyPageflowtest@3fd7a715]" name="Privacypolicylabeltest" duration-ms="59" started-at="2020-04-01T19:55:52 IST" finished-at="2020-04-01T19:55:52 IST">
+        <test-method status="PASS" signature="Privacypolicylabeltest()[pri:1, instance:com.luxepass.qa.tests.PrivacypolicyPageflowtest@3fd7a715]" name="Privacypolicylabeltest" duration-ms="60" started-at="2020-04-01T20:49:46 IST" finished-at="2020-04-01T20:49:46 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Privacypolicylabeltest -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.luxepass.qa.tests.PrivacypolicyPageflowtest@3fd7a715]" name="teardown" is-config="true" duration-ms="741" started-at="2020-04-01T19:55:52 IST" finished-at="2020-04-01T19:55:53 IST">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.luxepass.qa.tests.PrivacypolicyPageflowtest@3fd7a715]" name="teardown" is-config="true" duration-ms="781" started-at="2020-04-01T20:49:46 IST" finished-at="2020-04-01T20:49:47 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.luxepass.qa.tests.PrivacypolicyPageflowtest -->
       <class name="com.luxepass.qa.tests.PartnerwithUSpageflowtest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.luxepass.qa.tests.PartnerwithUSpageflowtest@26aa12dd]" name="setUp" is-config="true" duration-ms="14781" started-at="2020-04-01T19:55:23 IST" finished-at="2020-04-01T19:55:37 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.luxepass.qa.tests.PartnerwithUSpageflowtest@26aa12dd]" name="setUp" is-config="true" duration-ms="15718" started-at="2020-04-01T20:49:04 IST" finished-at="2020-04-01T20:49:20 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="partnerwithUSlabeltest()[pri:1, instance:com.luxepass.qa.tests.PartnerwithUSpageflowtest@26aa12dd]" name="partnerwithUSlabeltest" duration-ms="67" started-at="2020-04-01T19:55:37 IST" finished-at="2020-04-01T19:55:38 IST">
+        <test-method status="PASS" signature="partnerwithUSlabeltest()[pri:1, instance:com.luxepass.qa.tests.PartnerwithUSpageflowtest@26aa12dd]" name="partnerwithUSlabeltest" duration-ms="80" started-at="2020-04-01T20:49:20 IST" finished-at="2020-04-01T20:49:20 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- partnerwithUSlabeltest -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.luxepass.qa.tests.PartnerwithUSpageflowtest@26aa12dd]" name="teardown" is-config="true" duration-ms="744" started-at="2020-04-01T19:55:38 IST" finished-at="2020-04-01T19:55:38 IST">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.luxepass.qa.tests.PartnerwithUSpageflowtest@26aa12dd]" name="teardown" is-config="true" duration-ms="1446" started-at="2020-04-01T20:49:20 IST" finished-at="2020-04-01T20:49:21 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.luxepass.qa.tests.PartnerwithUSpageflowtest -->
       <class name="com.luxepass.qa.tests.MyProfilepageflowtest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.luxepass.qa.tests.MyProfilepageflowtest@76707e36]" name="setUp" is-config="true" duration-ms="16232" started-at="2020-04-01T19:53:40 IST" finished-at="2020-04-01T19:53:57 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.luxepass.qa.tests.MyProfilepageflowtest@76707e36]" name="setUp" is-config="true" duration-ms="17467" started-at="2020-04-01T20:47:07 IST" finished-at="2020-04-01T20:47:25 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="myprofilelabeltest()[pri:1, instance:com.luxepass.qa.tests.MyProfilepageflowtest@76707e36]" name="myprofilelabeltest" duration-ms="106" started-at="2020-04-01T19:53:57 IST" finished-at="2020-04-01T19:53:57 IST">
+        <test-method status="PASS" signature="myprofilelabeltest()[pri:1, instance:com.luxepass.qa.tests.MyProfilepageflowtest@76707e36]" name="myprofilelabeltest" duration-ms="60" started-at="2020-04-01T20:47:25 IST" finished-at="2020-04-01T20:47:25 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- myprofilelabeltest -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.luxepass.qa.tests.MyProfilepageflowtest@76707e36]" name="teardown" is-config="true" duration-ms="762" started-at="2020-04-01T19:53:57 IST" finished-at="2020-04-01T19:53:57 IST">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.luxepass.qa.tests.MyProfilepageflowtest@76707e36]" name="teardown" is-config="true" duration-ms="770" started-at="2020-04-01T20:47:25 IST" finished-at="2020-04-01T20:47:26 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.luxepass.qa.tests.MyProfilepageflowtest -->
       <class name="com.luxepass.qa.tests.ContactUspageflowtest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.luxepass.qa.tests.ContactUspageflowtest@1c3a4799]" name="setUp" is-config="true" duration-ms="17144" started-at="2020-04-01T19:54:46 IST" finished-at="2020-04-01T19:55:04 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.luxepass.qa.tests.ContactUspageflowtest@1c3a4799]" name="setUp" is-config="true" duration-ms="19607" started-at="2020-04-01T20:48:27 IST" finished-at="2020-04-01T20:48:47 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="contactUslabeltest()[pri:1, instance:com.luxepass.qa.tests.ContactUspageflowtest@1c3a4799]" name="contactUslabeltest" duration-ms="86" started-at="2020-04-01T19:55:04 IST" finished-at="2020-04-01T19:55:04 IST">
+        <test-method status="PASS" signature="contactUslabeltest()[pri:1, instance:com.luxepass.qa.tests.ContactUspageflowtest@1c3a4799]" name="contactUslabeltest" duration-ms="65" started-at="2020-04-01T20:48:47 IST" finished-at="2020-04-01T20:48:47 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- contactUslabeltest -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.luxepass.qa.tests.ContactUspageflowtest@1c3a4799]" name="teardown" is-config="true" duration-ms="784" started-at="2020-04-01T19:55:04 IST" finished-at="2020-04-01T19:55:04 IST">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.luxepass.qa.tests.ContactUspageflowtest@1c3a4799]" name="teardown" is-config="true" duration-ms="814" started-at="2020-04-01T20:48:47 IST" finished-at="2020-04-01T20:48:47 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.luxepass.qa.tests.ContactUspageflowtest -->
       <class name="com.luxepass.qa.tests.TandCpageflowtest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.luxepass.qa.tests.TandCpageflowtest@711f39f9]" name="setUp" is-config="true" duration-ms="14569" started-at="2020-04-01T19:55:53 IST" finished-at="2020-04-01T19:56:08 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.luxepass.qa.tests.TandCpageflowtest@711f39f9]" name="setUp" is-config="true" duration-ms="15606" started-at="2020-04-01T20:49:47 IST" finished-at="2020-04-01T20:50:02 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="TandClabeltest()[pri:1, instance:com.luxepass.qa.tests.TandCpageflowtest@711f39f9]" name="TandClabeltest" duration-ms="57" started-at="2020-04-01T19:56:08 IST" finished-at="2020-04-01T19:56:08 IST">
+        <test-method status="PASS" signature="TandClabeltest()[pri:1, instance:com.luxepass.qa.tests.TandCpageflowtest@711f39f9]" name="TandClabeltest" duration-ms="50" started-at="2020-04-01T20:50:02 IST" finished-at="2020-04-01T20:50:02 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TandClabeltest -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.luxepass.qa.tests.TandCpageflowtest@711f39f9]" name="teardown" is-config="true" duration-ms="1236" started-at="2020-04-01T19:56:08 IST" finished-at="2020-04-01T19:56:09 IST">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.luxepass.qa.tests.TandCpageflowtest@711f39f9]" name="teardown" is-config="true" duration-ms="746" started-at="2020-04-01T20:50:02 IST" finished-at="2020-04-01T20:50:03 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.luxepass.qa.tests.TandCpageflowtest -->
       <class name="com.luxepass.qa.tests.Howitworksflowtest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.luxepass.qa.tests.Howitworksflowtest@694e1548]" name="setUp" is-config="true" duration-ms="15973" started-at="2020-04-01T19:54:30 IST" finished-at="2020-04-01T19:54:46 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.luxepass.qa.tests.Howitworksflowtest@694e1548]" name="setUp" is-config="true" duration-ms="23354" started-at="2020-04-01T20:48:03 IST" finished-at="2020-04-01T20:48:26 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="Howitworkslabeltest()[pri:1, instance:com.luxepass.qa.tests.Howitworksflowtest@694e1548]" name="Howitworkslabeltest" duration-ms="59" started-at="2020-04-01T19:54:46 IST" finished-at="2020-04-01T19:54:46 IST">
+        <test-method status="PASS" signature="Howitworkslabeltest()[pri:1, instance:com.luxepass.qa.tests.Howitworksflowtest@694e1548]" name="Howitworkslabeltest" duration-ms="50" started-at="2020-04-01T20:48:26 IST" finished-at="2020-04-01T20:48:26 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Howitworkslabeltest -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.luxepass.qa.tests.Howitworksflowtest@694e1548]" name="teardown" is-config="true" duration-ms="764" started-at="2020-04-01T19:54:46 IST" finished-at="2020-04-01T19:54:46 IST">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.luxepass.qa.tests.Howitworksflowtest@694e1548]" name="teardown" is-config="true" duration-ms="756" started-at="2020-04-01T20:48:26 IST" finished-at="2020-04-01T20:48:27 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.luxepass.qa.tests.Howitworksflowtest -->
       <class name="com.luxepass.qa.tests.FAQpageflowtest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.luxepass.qa.tests.FAQpageflowtest@131276c2]" name="setUp" is-config="true" duration-ms="16744" started-at="2020-04-01T19:55:04 IST" finished-at="2020-04-01T19:55:21 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.luxepass.qa.tests.FAQpageflowtest@131276c2]" name="setUp" is-config="true" duration-ms="15597" started-at="2020-04-01T20:48:47 IST" finished-at="2020-04-01T20:49:03 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyFAQlabeltest()[pri:1, instance:com.luxepass.qa.tests.FAQpageflowtest@131276c2]" name="verifyFAQlabeltest" duration-ms="51" started-at="2020-04-01T19:55:21 IST" finished-at="2020-04-01T19:55:21 IST">
+        <test-method status="PASS" signature="verifyFAQlabeltest()[pri:1, instance:com.luxepass.qa.tests.FAQpageflowtest@131276c2]" name="verifyFAQlabeltest" duration-ms="54" started-at="2020-04-01T20:49:03 IST" finished-at="2020-04-01T20:49:03 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyFAQlabeltest -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.luxepass.qa.tests.FAQpageflowtest@131276c2]" name="teardown" is-config="true" duration-ms="1406" started-at="2020-04-01T19:55:21 IST" finished-at="2020-04-01T19:55:23 IST">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.luxepass.qa.tests.FAQpageflowtest@131276c2]" name="teardown" is-config="true" duration-ms="780" started-at="2020-04-01T20:49:03 IST" finished-at="2020-04-01T20:49:04 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
