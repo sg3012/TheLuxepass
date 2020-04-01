@@ -179,23 +179,23 @@ public class HomePageflowtest extends TestBase {
 		Thread.sleep(1500);
 	}
 
-//	@Test(priority = 23)
-//	public void navigatefooterPartnerwithustest() throws InterruptedException {
-//		partnerwithus = homepage.clickPartnerwithuslink();
-//		Thread.sleep(1500);
-//	}
-//
-//	@Test(priority = 24)
-//	public void navigateInstasocialpagetest() throws InterruptedException {
-//		homepage.clickInstasociallink();
-//		Thread.sleep(1500);
-//	}
-//
-//	@Test(priority = 25)
-//	public void navigateFBsocialpagetest() throws InterruptedException {
-//		homepage.clickFBsociallink();
-//		Thread.sleep(1500);
-//	}
+	@Test(priority = 23)
+	public void navigatefooterPartnerwithustest() throws InterruptedException {
+		partnerwithus = homepage.clickPartnerwithuslink();
+		Thread.sleep(1500);
+	}
+
+	@Test(priority = 24)
+	public void navigateInstasocialpagetest() throws InterruptedException {
+		homepage.clickInstasociallink();
+		Thread.sleep(1500);
+	}
+
+	@Test(priority = 25)
+	public void navigateFBsocialpagetest() throws InterruptedException {
+		homepage.clickFBsociallink();
+		Thread.sleep(1500);
+	}
 
 	@AfterMethod
 	public void teardown() {
