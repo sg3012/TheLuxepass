@@ -7,15 +7,16 @@ import org.testng.annotations.Test;
 
 import com.luxepass.qa.base.TestBase;
 import com.luxepass.qa.pages.HomePage;
-import com.luxepass.qa.pages.HowitWorksPage;
 import com.luxepass.qa.pages.LoginPage;
+import com.luxepass.qa.pages.PrivacyPolicyPage;
 
-public class Howitworksflowtest extends TestBase {
+public class PrivacypolicyPageflowtest extends TestBase {
+
 	LoginPage loginpage;
 	HomePage homepage;
-	HowitWorksPage howitworks;
+	PrivacyPolicyPage privacypolicy; 
 
-	public Howitworksflowtest() {
+	public PrivacypolicyPageflowtest(){
 		super(); /*
 					 * 1. This statement will call the super/base class(TestBase) constructor and
 					 * load the properties file in this class. 2. This statement is mandatory to be
@@ -32,26 +33,28 @@ public class Howitworksflowtest extends TestBase {
 							 * following things : -- Sets up the driver for the required browser.
 							 */
 
-		loginpage = new LoginPage();
+		/*
+		 * loginpage = new LoginPage(); Created a LoginPage Class Object and will call
+		 * it's constructor which will eventually initialize the Object
+		 */
 		homepage = new HomePage();
 		loginpage = new LoginPage();
-		howitworks = new HowitWorksPage();
+		privacypolicy= new PrivacyPolicyPage(); 
 		homepage = loginpage.login(prop.getProperty("Email"), prop.getProperty(
 				"password")); /*
 								 * With this statement the home page reference variable will eventually point to
 								 * the home page object as login() method returns the Homepage object
 	   							 */
-	   homepage.clickonHowitworks();
+	   homepage.clickPrivacypolicylink();
 	}
 
 	@Test(priority = 1)
-	public void Howitworkslabeltest() {
-		Assert.assertTrue(howitworks.verifyHowitworkslabel(),"How it works label missing");
+	public void Privacypolicylabeltest() {
+		Assert.assertTrue(privacypolicy.verifyPrivacypolicylabel(),"Privacy policy label missing");
 	}
 
 	@AfterMethod
 	public void teardown() {
 		driver.quit();
 	}
-
 }

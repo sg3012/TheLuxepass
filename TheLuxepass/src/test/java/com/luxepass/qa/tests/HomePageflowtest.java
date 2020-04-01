@@ -7,13 +7,13 @@ import org.testng.annotations.Test;
 
 import com.luxepass.qa.base.TestBase;
 import com.luxepass.qa.pages.ContactUs;
-import com.luxepass.qa.pages.FAQ;
+import com.luxepass.qa.pages.FAQPage;
 import com.luxepass.qa.pages.HomePage;
 import com.luxepass.qa.pages.HotelListingPage;
 import com.luxepass.qa.pages.LoginPage;
 import com.luxepass.qa.pages.MyOrdersPage;
 import com.luxepass.qa.pages.MyProfilepage;
-import com.luxepass.qa.pages.PartnerwithUs;
+import com.luxepass.qa.pages.PartnerwithUsPage;
 
 public class HomePageflowtest extends TestBase {
 	LoginPage loginpage; 
@@ -21,9 +21,9 @@ public class HomePageflowtest extends TestBase {
 	HotelListingPage hotelisting;
 	MyOrdersPage myorders;
 	MyProfilepage myprofile;
-	FAQ faq;
+	FAQPage fAQPage;
 	ContactUs contactus;
-	PartnerwithUs partnerwithus;
+	PartnerwithUsPage partnerwithus;
 
 	public HomePageflowtest() {
 		super(); /*
@@ -42,10 +42,7 @@ public class HomePageflowtest extends TestBase {
 							 * following things : -- Sets up the driver for the required browser.
 							 */
 
-		/*loginpage = new LoginPage(); 
-										 * Created a LoginPage Class Object and will call it's constructor which will
-										 * eventually initialize the Object
-										 */
+		loginpage = new LoginPage();
 		homepage = loginpage.login(prop.getProperty("Email"), prop.getProperty(
 				"password")); /*
 								 * With this statement the home page reference variable will eventually point to
@@ -85,12 +82,14 @@ public class HomePageflowtest extends TestBase {
 
 	@Test(priority = 6)
 	public void myaccounttest() throws InterruptedException {
+		homepage.clickonMyprofile();
 		myprofile = homepage.clickonMyaccount();
 		Thread.sleep(1500);
 	}
 
 	@Test(priority = 7)
 	public void poolfiltertest() throws InterruptedException {
+	    
 		hotelisting = homepage.clickonPoolfilter();
 		Thread.sleep(1500);
 	}
@@ -117,13 +116,13 @@ public class HomePageflowtest extends TestBase {
 		hotelisting = homepage.clickonBrowsemorehotel();
 		Thread.sleep(1500);
 	}
-
-	@Test(priority = 12)
-	public void aboutusvideotest() throws InterruptedException {
-		homepage.playaboutusvideo();
-		Thread.sleep(1500);
-	}
-
+	
+//	@Test(priority = 12)
+//	public void aboutusvideotest() throws InterruptedException {
+//		homepage.playaboutusvideo();	
+//		Thread.sleep(1500);
+//	}
+	
 	@Test(priority = 13)
 	public void browsemorehowitworkstest() throws InterruptedException {
 		homepage.clickonBrowsemorehowitworks();
@@ -133,11 +132,12 @@ public class HomePageflowtest extends TestBase {
 	@Test(priority = 14)
 	public void sendsmsapplinktest() throws InterruptedException {
 		homepage.sendsmsapplink(prop.getProperty("phone"));
+		Thread.sleep(2000);
 	}
 
 	@Test(priority = 15)
 	public void sendemailpplinktest() throws InterruptedException {
-		homepage.sendemailapplink(prop.getProperty("email"));
+		homepage.sendemailapplink(prop.getProperty("Email"));
 	}
 
 	@Test(priority = 16)
@@ -152,12 +152,12 @@ public class HomePageflowtest extends TestBase {
 
 	@Test(priority = 18)
 	public void sendsubscribeemailtest() throws InterruptedException {
-		homepage.sendsubscriptionemail(prop.getProperty("email"));
+		homepage.sendsubscriptionemail(prop.getProperty("Email"));
 	}
 
 	@Test(priority = 19)
 	public void navigatefooterFAQtest() throws InterruptedException {
-		faq = homepage.clickFAQlink();
+		fAQPage = homepage.clickFAQlink();
 		Thread.sleep(1500);
 	}
 
@@ -179,23 +179,23 @@ public class HomePageflowtest extends TestBase {
 		Thread.sleep(1500);
 	}
 
-	@Test(priority = 23)
-	public void navigatefooterPartnerwithustest() throws InterruptedException {
-		partnerwithus = homepage.clickPartnerwithuslink();
-		Thread.sleep(1500);
-	}
-
-	@Test(priority = 24)
-	public void navigateInstasocialpagetest() throws InterruptedException {
-		homepage.clickInstasociallink();
-		Thread.sleep(1500);
-	}
-
-	@Test(priority = 25)
-	public void navigateFBsocialpagetest() throws InterruptedException {
-		homepage.clickFBsociallink();
-		Thread.sleep(1500);
-	}
+//	@Test(priority = 23)
+//	public void navigatefooterPartnerwithustest() throws InterruptedException {
+//		partnerwithus = homepage.clickPartnerwithuslink();
+//		Thread.sleep(1500);
+//	}
+//
+//	@Test(priority = 24)
+//	public void navigateInstasocialpagetest() throws InterruptedException {
+//		homepage.clickInstasociallink();
+//		Thread.sleep(1500);
+//	}
+//
+//	@Test(priority = 25)
+//	public void navigateFBsocialpagetest() throws InterruptedException {
+//		homepage.clickFBsociallink();
+//		Thread.sleep(1500);
+//	}
 
 	@AfterMethod
 	public void teardown() {

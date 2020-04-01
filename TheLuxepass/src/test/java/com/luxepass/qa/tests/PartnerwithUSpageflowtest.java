@@ -9,13 +9,15 @@ import com.luxepass.qa.base.TestBase;
 import com.luxepass.qa.pages.HomePage;
 import com.luxepass.qa.pages.HowitWorksPage;
 import com.luxepass.qa.pages.LoginPage;
+import com.luxepass.qa.pages.PartnerwithUsPage;
 
-public class Howitworksflowtest extends TestBase {
+public class PartnerwithUSpageflowtest extends TestBase{
+	
 	LoginPage loginpage;
 	HomePage homepage;
-	HowitWorksPage howitworks;
+	PartnerwithUsPage partnerwithus; 
 
-	public Howitworksflowtest() {
+	public PartnerwithUSpageflowtest() {
 		super(); /*
 					 * 1. This statement will call the super/base class(TestBase) constructor and
 					 * load the properties file in this class. 2. This statement is mandatory to be
@@ -35,18 +37,18 @@ public class Howitworksflowtest extends TestBase {
 		loginpage = new LoginPage();
 		homepage = new HomePage();
 		loginpage = new LoginPage();
-		howitworks = new HowitWorksPage();
+		partnerwithus = new PartnerwithUsPage();
 		homepage = loginpage.login(prop.getProperty("Email"), prop.getProperty(
 				"password")); /*
 								 * With this statement the home page reference variable will eventually point to
 								 * the home page object as login() method returns the Homepage object
 	   							 */
-	   homepage.clickonHowitworks();
+	   partnerwithus=homepage.clickPartnerwithuslink(); 
 	}
 
 	@Test(priority = 1)
-	public void Howitworkslabeltest() {
-		Assert.assertTrue(howitworks.verifyHowitworkslabel(),"How it works label missing");
+	public void partnerwithUSlabeltest() {
+		Assert.assertTrue(partnerwithus.verifyPartnerwithuslabel(),"Partner with us label missing");
 	}
 
 	@AfterMethod

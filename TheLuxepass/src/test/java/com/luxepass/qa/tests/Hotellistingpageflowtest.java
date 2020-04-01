@@ -7,15 +7,16 @@ import org.testng.annotations.Test;
 
 import com.luxepass.qa.base.TestBase;
 import com.luxepass.qa.pages.HomePage;
-import com.luxepass.qa.pages.HowitWorksPage;
+import com.luxepass.qa.pages.HotelListingPage;
 import com.luxepass.qa.pages.LoginPage;
 
-public class Howitworksflowtest extends TestBase {
+public class Hotellistingpageflowtest extends TestBase {
+
 	LoginPage loginpage;
 	HomePage homepage;
-	HowitWorksPage howitworks;
+	HotelListingPage hotellistingpage;
 
-	public Howitworksflowtest() {
+	public Hotellistingpageflowtest() {
 		super(); /*
 					 * 1. This statement will call the super/base class(TestBase) constructor and
 					 * load the properties file in this class. 2. This statement is mandatory to be
@@ -32,21 +33,25 @@ public class Howitworksflowtest extends TestBase {
 							 * following things : -- Sets up the driver for the required browser.
 							 */
 
+		
 		loginpage = new LoginPage();
 		homepage = new HomePage();
 		loginpage = new LoginPage();
-		howitworks = new HowitWorksPage();
+		hotellistingpage = new HotelListingPage();
 		homepage = loginpage.login(prop.getProperty("Email"), prop.getProperty(
 				"password")); /*
 								 * With this statement the home page reference variable will eventually point to
 								 * the home page object as login() method returns the Homepage object
-	   							 */
-	   homepage.clickonHowitworks();
+								 */
+		
+		hotellistingpage=homepage.clickonBrowseHotel();
+
 	}
 
 	@Test(priority = 1)
-	public void Howitworkslabeltest() {
-		Assert.assertTrue(howitworks.verifyHowitworkslabel(),"How it works label missing");
+
+	public void Hotellistinglabeltest() {
+		Assert.assertTrue(hotellistingpage.verifyHotellistinglabel(), "Hotellisting page label missing");
 	}
 
 	@AfterMethod

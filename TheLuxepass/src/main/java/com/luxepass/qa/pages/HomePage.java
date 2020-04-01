@@ -5,17 +5,19 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
 import com.luxepass.qa.base.TestBase;
+import com.luxepass.qa.util.TestUtil;
 public class HomePage extends TestBase {
     
 	// PAGE OBJECT REPO:
-
+     
 	@FindBy(xpath = "//div[@class='menu-1']//ul//li//a[text()='How It Works']")
 	WebElement howitworks;
 
@@ -25,8 +27,9 @@ public class HomePage extends TestBase {
 	@FindBy(xpath = "//div[@class='menu-1']//ul[@class='nav navbar-nav navbar-right']//li//a[text()='My Orders']")
 	WebElement myorders;
 
-	@FindBy(xpath = "//div[@class=\"menu-link\"]//div[@class=\"menu-1\"]"
-			+ "//img[starts-with(@src,'https://s3.us-west-2.amazonaws.com/luxepass')]")
+	@FindBy(xpath = "//div[@class='menu-link']//div[@class='menu-1']"
+			+ "//img[starts-with(@src,'https://s3.us-west-2.amazonaws.com/luxepass') "
+			+ "or starts-with(@src,'/assets/images')]")
 	WebElement myprofile;
 
 	@FindBy(xpath = "//li[@class='dropdown open']//ul[@class='dropdown-menu']//a[text()='My Account']")
@@ -63,8 +66,8 @@ public class HomePage extends TestBase {
 	@FindBy(xpath = "//div[@class='m-next active swiper-button-next']")
 	WebElement nxtslidericon;
 
-	@FindBy(xpath = "//div[@class='hotel-box on-img']//span[@class='right']//img[@src='assets/images/heart.png']")
-	List<WebElement> hearticons;
+//	@FindBy(xpath = "//div[@class='hotel-box on-img']//span[@class='right']//img[@src='assets/images/heart.png']")
+//	List<WebElement> hearticons;
 
 	@FindBy(xpath = "//section[@id='hotels']//a[@class='btn btn-info' and contains(text(),'Browse More')]")
 	WebElement browsemorehotel;
@@ -72,8 +75,9 @@ public class HomePage extends TestBase {
 	@FindBy(xpath = "//section[@class='about-work additional-feature']//a[@class='btn btn-info' and contains(text(),'Browse More')]")
 	WebElement browsemorehowitworks;
 
-	@FindBy(xpath = "//button[@class='ytp-large-play-button ytp-button']")
-	WebElement aboutusvideobtn;
+//	@FindBy(xpath = "//*[name()='svg' ]//*[local-name()='path' and contains(@fill,'#') "
+//			+ "and @class='ytp-large-play-button-bg']")
+//	WebElement aboutusvideobtn;
 	@FindBy(xpath = "//input[@class='custom-button input-num ng-untouched ng-pristine ng-invalid' "
 			+ "and @formcontrolname='mobile']")
 	WebElement smslinkinput;
@@ -99,8 +103,8 @@ public class HomePage extends TestBase {
 
 	@FindBy(xpath = "//button[text()='Subscribe']")
 	WebElement subscribebtn;
-
-	@FindBy(linkText = "FAQ")
+    
+	@FindBy(linkText= "FAQ")
 	WebElement FAQlnk;
 
 	@FindBy(linkText = "Terms & Conditions")
@@ -118,8 +122,12 @@ public class HomePage extends TestBase {
 	@FindBy(xpath = "//i[@class='fa fa-instagram']")
 	WebElement Instasocial;
 
-	@FindBy(xpath = "//i[@class='fa fa-facebook']")
+	@FindBy(xpath = "//a[contains(@href,'https://www.facebook.com')]//i[@class='fa fa-facebook']")
 	WebElement Facebooksocial;
+	
+//	@FindBy(xpath = "//div[@class='about-heading']")
+//	WebElement containeraboutus;
+	
 //	@FindBy(xpath="//div[@class='gtco-icon']//img[@src='assets/images/icon-3.png']")
 //	WebElement spasalonfilterimg;
 	String parent,child; 
@@ -142,7 +150,22 @@ public class HomePage extends TestBase {
 		JavascriptExecutor jse = (JavascriptExecutor) driver;
 		jse.executeScript("arguments[0].click();", heartlist);
 	}
-
+	
+	public void hitFbsociallink(WebElement fbsocial, WebDriver driver) {
+		JavascriptExecutor jse = (JavascriptExecutor) driver;
+		jse.executeScript("arguments[0].click();", fbsocial);
+	}
+	
+	public void hitInstasociallink(WebElement instasocial, WebDriver driver) {
+		JavascriptExecutor jse = (JavascriptExecutor) driver;
+		jse.executeScript("arguments[0].click();", instasocial);
+	}
+	
+//	public void scrollintoviewaboutuscontainer(WebElement aboutuscontainer, WebDriver driver) {
+//		JavascriptExecutor jse = (JavascriptExecutor) driver;
+//		jse.executeScript("arguments[0].scrollIntoView(true);",aboutuscontainer);
+//	}
+		
 	public HomePage() {                                     // For initializing the object of this page. 
 		PageFactory.initElements(driver, this);
 	}                                              
@@ -203,18 +226,19 @@ public class HomePage extends TestBase {
 	}
 
 	public void addTofavorites() throws InterruptedException {
+		List<WebElement> hearticons = driver.findElements(By.xpath("//div[@class='hotel-box on-img']"
+				+ "//span[@class='right']//img[@src='assets/images/heart.png']"));
 		scrollintoviewhotel(slidercontainerhotel, driver);
 		for (int i = 0; i < hearticons.size(); i++) {
-			// THIS CODE IS TO ADD ALL HOTELS TO FAVOURITE
+			// THIS CODE IS TO ADD ALL HOTELS TO FAVOURITES
 			if (hearticons.get(i).isDisplayed() == true) {
-				System.out.println(hearticons.get(i).isDisplayed());
+				System.out.println("Index: "+i+" "+hearticons.get(i).isDisplayed());
 				clickheart(hearticons.get(i), driver);
 				Thread.sleep(1000);
 			}
 
 			else {
-				System.out.println(hearticons.get(i).isDisplayed());
-				// nxtslidericon.click();
+				System.out.println("Index: "+i+" "+hearticons.get(i).isDisplayed());
 				clickslider(nxtslidericon, driver);
 				clickheart(hearticons.get(i), driver);
 			}
@@ -224,9 +248,13 @@ public class HomePage extends TestBase {
 
 	}
 
-	public void playaboutusvideo() {
-		aboutusvideobtn.click();
-	}
+//	public void playaboutusvideo() { 
+//		scrollintoviewaboutuscontainer(containeraboutus, driver);
+//		Actions clickaboutusvideo = new Actions(driver);
+//		clickaboutusvideo.moveToElement(aboutusvideobtn).click(aboutusvideobtn).build().perform();
+//		//System.out.println("About us video button visibility: "+aboutusvideobtn.isDisplayed());
+//		
+//	}
 
 	public void sendsmsapplink(String phone) {
 		smslinkinput.sendKeys(phone);
@@ -279,11 +307,11 @@ public class HomePage extends TestBase {
 		subscribebtn.click();
 	}
 
-	public FAQ clickFAQlink()
+	public FAQPage clickFAQlink()
 
 	{
 		FAQlnk.click();
-		return new FAQ();
+		return new FAQPage();
 	}
 
 	public ContactUs clickContactuslink()
@@ -293,11 +321,11 @@ public class HomePage extends TestBase {
 		return new ContactUs();
 	}
 
-	public PartnerwithUs clickPartnerwithuslink()
+	public PartnerwithUsPage clickPartnerwithuslink()
 
 	{
 		PartnerWithUslnk.click();
-		return new PartnerwithUs();
+		return new PartnerwithUsPage();
 	}
 
 	public void clickTandClink()
@@ -317,14 +345,15 @@ public class HomePage extends TestBase {
 	public void clickInstasociallink()
 
 	{
-		Instasocial.click();
-
+//		Instasocial.click();
+        hitInstasociallink(Instasocial, driver);
 	}
 
 	public void clickFBsociallink()
 
 	{
-		Facebooksocial.click();
+//		Facebooksocial.click();
+		hitFbsociallink(Facebooksocial, driver);
 
 	}
 

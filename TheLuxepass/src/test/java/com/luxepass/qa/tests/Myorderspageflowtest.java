@@ -7,15 +7,16 @@ import org.testng.annotations.Test;
 
 import com.luxepass.qa.base.TestBase;
 import com.luxepass.qa.pages.HomePage;
-import com.luxepass.qa.pages.HowitWorksPage;
 import com.luxepass.qa.pages.LoginPage;
+import com.luxepass.qa.pages.MyOrdersPage;
 
-public class Howitworksflowtest extends TestBase {
+public class Myorderspageflowtest extends TestBase{
+
 	LoginPage loginpage;
 	HomePage homepage;
-	HowitWorksPage howitworks;
+	MyOrdersPage myorders;
 
-	public Howitworksflowtest() {
+	public Myorderspageflowtest() {
 		super(); /*
 					 * 1. This statement will call the super/base class(TestBase) constructor and
 					 * load the properties file in this class. 2. This statement is mandatory to be
@@ -34,24 +35,23 @@ public class Howitworksflowtest extends TestBase {
 
 		loginpage = new LoginPage();
 		homepage = new HomePage();
-		loginpage = new LoginPage();
-		howitworks = new HowitWorksPage();
+		myorders = new MyOrdersPage();
 		homepage = loginpage.login(prop.getProperty("Email"), prop.getProperty(
 				"password")); /*
 								 * With this statement the home page reference variable will eventually point to
 								 * the home page object as login() method returns the Homepage object
 	   							 */
-	   homepage.clickonHowitworks();
+	   myorders=homepage.clickonMyorders();
 	}
 
 	@Test(priority = 1)
-	public void Howitworkslabeltest() {
-		Assert.assertTrue(howitworks.verifyHowitworkslabel(),"How it works label missing");
+	public void Myorderslabeltest() {
+		Assert.assertTrue(myorders.verifyMyOrderslabel(),"My orders page label missing");
 	}
 
 	@AfterMethod
 	public void teardown() {
 		driver.quit();
 	}
-
+	
 }
