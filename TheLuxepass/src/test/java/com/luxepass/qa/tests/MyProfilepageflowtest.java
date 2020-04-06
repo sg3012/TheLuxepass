@@ -36,7 +36,6 @@ public class MyProfilepageflowtest extends TestBase {
 
 		loginpage = new LoginPage();
 		homepage = new HomePage();
-		loginpage = new LoginPage();
 		myprofile = new MyProfilepage(); 
 		homepage = loginpage.login(prop.getProperty("Email"), prop.getProperty(
 				"password")); /*

@@ -125,6 +125,17 @@ public class HomePage extends TestBase {
 	@FindBy(xpath = "//a[contains(@href,'https://www.facebook.com')]//i[@class='fa fa-facebook']")
 	WebElement Facebooksocial;
 	
+	@FindBy(xpath="//div[@class='display-tc']//h1[contains(text(),'How It Works')]")
+	WebElement howitworkslabel;
+	
+	@FindBy(xpath="//div[@class='section-heading']//h1[contains(text(),'Terms Of Use')]")
+	WebElement TandCpagelabel;
+	
+	@FindBy(xpath="//div[@class='section-heading']"
+			+ "//h1[contains(text(),'Privacy Policy')]")
+	WebElement privacypolicylabel; 
+	
+
 //	@FindBy(xpath = "//div[@class='about-heading']")
 //	WebElement containeraboutus;
 	
@@ -161,6 +172,11 @@ public class HomePage extends TestBase {
 		jse.executeScript("arguments[0].click();", instasocial);
 	}
 	
+	public void scrollintoviewdownloadourapp(WebElement downloadourapp, WebDriver driver) {
+		JavascriptExecutor jse = (JavascriptExecutor) driver;
+		jse.executeScript("arguments[0].scrollIntoView(true);", downloadourapp);
+	}
+	
 //	public void scrollintoviewaboutuscontainer(WebElement aboutuscontainer, WebDriver driver) {
 //		JavascriptExecutor jse = (JavascriptExecutor) driver;
 //		jse.executeScript("arguments[0].scrollIntoView(true);",aboutuscontainer);
@@ -175,8 +191,9 @@ public class HomePage extends TestBase {
 
 	}
     
-	public void clickonHowitworks() {
+	public boolean clickonHowitworks() {
 		howitworks.click();
+		return howitworkslabel.isDisplayed(); 
 	}
 
 	public HotelListingPage clickonBrowseHotel() {
@@ -189,8 +206,9 @@ public class HomePage extends TestBase {
 		return new MyOrdersPage();
 	}
 
-	public void clickonMyprofile() {
+	public boolean clickonMyprofile() {
 		myprofile.click();
+		return myaccountlink.isDisplayed(); 
 
 	}
 
@@ -205,9 +223,10 @@ public class HomePage extends TestBase {
 		return new HotelListingPage();
 	}
 
-	public void clickonBrowsemorehowitworks() {
+	public boolean clickonBrowsemorehowitworks() {
 		scrollintoviewhowitworks(slidercontainerhowitowrks, driver);
 		browsemorehowitworks.click();
+		return howitworkslabel.isDisplayed();
 	}
 
 	public HotelListingPage clickonPoolfilter() {
@@ -256,14 +275,22 @@ public class HomePage extends TestBase {
 //		
 //	}
 
-	public void sendsmsapplink(String phone) {
+	public String sendsmsapplink(String phone) {
+		WebElement downloadourapp = driver.findElement(By.xpath("//section[@id='contact']"));
+		scrollintoviewdownloadourapp(downloadourapp, driver);
 		smslinkinput.sendKeys(phone);
 		sendsmsapplinkbtn.click();
+		String actual_message = smslinkinput.getAttribute("innerHTML");
+		return actual_message; 
 	}
 
-	public void sendemailapplink(String email) {
+	public String sendemailapplink(String email) {
+		WebElement downloadourapp = driver.findElement(By.xpath("//section[@id='contact']"));
+		scrollintoviewdownloadourapp(downloadourapp, driver);
 		emaillinkinput.sendKeys(email);
 		sendemailapplinkbtn.click();
+		String actual_message = emaillinkinput.getAttribute("innerHTML");
+		return actual_message;
 	}
 
 	public String clickgoogleplay() {
@@ -328,33 +355,59 @@ public class HomePage extends TestBase {
 		return new PartnerwithUsPage();
 	}
 
-	public void clickTandClink()
+	public boolean clickTandClink()
 
 	{
 		TandClnk.click();
+		return TandCpagelabel.isDisplayed(); 
 
 	}
 
-	public void clickPrivacypolicylink()
+	public boolean clickPrivacypolicylink()
 
 	{
 		Privacypolicylnk.click();
-
+        return privacypolicylabel.isDisplayed(); 
 	}
 
-	public void clickInstasociallink()
+	public String clickInstasociallink()
 
 	{
+		parent = driver.getWindowHandle();
 //		Instasocial.click();
         hitInstasociallink(Instasocial, driver);
+        Set<String>allhandles=driver.getWindowHandles();	  
+        Iterator<String> it = allhandles.iterator();
+        while(it.hasNext()==true)
+        {
+        	child = it.next();
+        	if(!parent.equalsIgnoreCase(child))
+        	{
+        		//System.out.println("CHILD WINDOW ID: " +child);
+        		driver.switchTo().window(child);
+        	}
+        }
+        return driver.getTitle();
 	}
 
-	public void clickFBsociallink()
+	public String clickFBsociallink()
 
 	{
+		parent = driver.getWindowHandle();
 //		Facebooksocial.click();
 		hitFbsociallink(Facebooksocial, driver);
-
+		Set<String>allhandles=driver.getWindowHandles();	  
+        Iterator<String> it = allhandles.iterator();
+        while(it.hasNext()==true)
+        {
+        	child = it.next();
+        	if(!parent.equalsIgnoreCase(child))
+        	{
+        		//System.out.println("CHILD WINDOW ID: " +child);
+        		driver.switchTo().window(child);
+        	}
+        }
+        return driver.getTitle();
 	}
 
 }

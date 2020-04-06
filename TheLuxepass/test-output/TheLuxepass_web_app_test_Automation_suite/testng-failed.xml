@@ -5,8 +5,7 @@
     <classes>
       <class name="com.luxepass.qa.tests.HomePageflowtest">
         <methods>
-          <include name="browsemorehowitworkstest"/>
-          <include name="navigatefooterPartnerwithustest"/>
+          <include name="navigateInstasocialpagetest"/>
           <include name="teardown"/>
           <include name="setUp"/>
         </methods>

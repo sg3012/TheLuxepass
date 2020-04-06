@@ -46,7 +46,8 @@ public class FAQpageflowtest extends TestBase{
 
 	@Test(priority = 1)
 	public void verifyFAQlabeltest() {
-		Assert.assertTrue(faq.verifyFQApagelabel(),"FAQ page label missing");
+		Assert.assertTrue(faq.verifyFQApagelabel(),"FAQ page label missing");	
+		
 	}
 
 	@AfterMethod

@@ -1,5 +1,7 @@
 package com.luxepass.qa.tests;
 
+
+import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -58,25 +60,31 @@ public class HomePageflowtest extends TestBase {
 
 	@Test(priority = 2)
 	public void howitworkstest() throws InterruptedException {
-		homepage.clickonHowitworks();
+		boolean visibility=homepage.clickonHowitworks();
+		Assert.assertTrue(visibility, "How it works label not displayed");
 		Thread.sleep(1500);
 	}
 
 	@Test(priority = 3)
 	public void browsehoteltest() throws InterruptedException {
 		hotelisting = homepage.clickonBrowseHotel();
+		Assert.assertTrue(driver.findElement(By.xpath("//div[@class='numberof-hotels text-left']"
+				+ "//h4[starts-with(text(),'All(')]")).isDisplayed(), "Hotellisting page label not displayed");
 		Thread.sleep(1500);
 	}
 
 	@Test(priority = 4)
 	public void myOrderstest() throws InterruptedException {
 		myorders = homepage.clickonMyorders();
+		Assert.assertTrue(driver.findElement(By.xpath("//div[@class='history-heading']"
+				+ "//h3[contains(text(),'Order History')]")).isDisplayed(), "MyOrders page label not displayed");
 		Thread.sleep(1500);
 	}
 
 	@Test(priority = 5)
 	public void myprofileicontest() throws InterruptedException {
-		homepage.clickonMyprofile();
+		boolean visibility=homepage.clickonMyprofile();
+		Assert.assertTrue(visibility, "MyProfile drop-down menu not visible");
 		Thread.sleep(1500);
 	}
 
@@ -84,6 +92,8 @@ public class HomePageflowtest extends TestBase {
 	public void myaccounttest() throws InterruptedException {
 		homepage.clickonMyprofile();
 		myprofile = homepage.clickonMyaccount();
+		Assert.assertTrue(driver.findElement(By.xpath("//li[@class='profileTab']"
+				+ "//h2[contains(text(),'My Profile')]")).isDisplayed(), "MyProfile page label not visible");
 		Thread.sleep(1500);
 	}
 
@@ -91,18 +101,24 @@ public class HomePageflowtest extends TestBase {
 	public void poolfiltertest() throws InterruptedException {
 	    
 		hotelisting = homepage.clickonPoolfilter();
+		Assert.assertTrue(driver.findElement(By.xpath("//div[@class='numberof-hotels text-left']"
+				+ "//h4[starts-with(text(),'All(')]")).isDisplayed(), "Hotellisting page label not displayed");
 		Thread.sleep(1500);
 	}
 
 	@Test(priority = 8)
 	public void gymfiltertest() throws InterruptedException {
 		hotelisting = homepage.clickonGymfilter();
+		Assert.assertTrue(driver.findElement(By.xpath("//div[@class='numberof-hotels text-left']"
+				+ "//h4[starts-with(text(),'All(')]")).isDisplayed(), "Hotellisting page label not displayed");
 		Thread.sleep(1500);
 	}
 
 	@Test(priority = 9)
 	public void spasalonfiltertest() throws InterruptedException {
 		hotelisting = homepage.clickonSpafilter();
+		Assert.assertTrue(driver.findElement(By.xpath("//div[@class='numberof-hotels text-left']"
+				+ "//h4[starts-with(text(),'All(')]")).isDisplayed(), "Hotellisting page label not displayed");
 		Thread.sleep(1500);
 	}
 
@@ -114,6 +130,8 @@ public class HomePageflowtest extends TestBase {
 	@Test(priority = 11)
 	public void browsemorehoteltest() throws InterruptedException {
 		hotelisting = homepage.clickonBrowsemorehotel();
+		Assert.assertTrue(driver.findElement(By.xpath("//div[@class='numberof-hotels text-left']"
+				+ "//h4[starts-with(text(),'All(')]")).isDisplayed(), "Hotellisting page label not displayed");
 		Thread.sleep(1500);
 	}
 	
@@ -125,75 +143,93 @@ public class HomePageflowtest extends TestBase {
 	
 	@Test(priority = 13)
 	public void browsemorehowitworkstest() throws InterruptedException {
-		homepage.clickonBrowsemorehowitworks();
+		boolean visibility=homepage.clickonBrowsemorehowitworks();
+		Assert.assertTrue(visibility, "How it works label not displayed");
 		Thread.sleep(1500);
 	}
 
 	@Test(priority = 14)
 	public void sendsmsapplinktest() throws InterruptedException {
-		homepage.sendsmsapplink(prop.getProperty("phone"));
-		Thread.sleep(2000);
+		String actual_message=homepage.sendsmsapplink(prop.getProperty("phone"));
+		Assert.assertEquals(actual_message,"Sent a link via SMS to install the app","LINK NOT SENT THROUGH SMS");
+		Thread.sleep(2000);    // Couldn't insert assert as SMS validation is not getting displayed against which assert could be inserted
 	}
 
 	@Test(priority = 15)
 	public void sendemailpplinktest() throws InterruptedException {
-		homepage.sendemailapplink(prop.getProperty("Email"));
+		String actual_message=homepage.sendemailapplink(prop.getProperty("Email"));
+		Assert.assertEquals(actual_message,"Sent a link via Mail to install the app","LINK NOT SENT THROUGH MAIL");
+		Thread.sleep(2000); // Couldn't insert assert as SMS validation is not getting displayed against which assert could be inserted
 	}
 
 	@Test(priority = 16)
 	public void playstoredownloadtest() throws InterruptedException {
-		homepage.clickgoogleplay();
+		String title=homepage.clickgoogleplay();
+		Assert.assertEquals(title,"The LuxePass - Apps on Google Play","Play store page title not matched");
+		System.out.println("Title:" +title);
 	}
 
 	@Test(priority = 17)
 	public void appstoredownloadtest() throws InterruptedException {
-		homepage.clickappstore();
+		String title=homepage.clickappstore(); // Couldn't insert assert as itunes page is not connecting
 	}
 
 	@Test(priority = 18)
 	public void sendsubscribeemailtest() throws InterruptedException {
-		homepage.sendsubscriptionemail(prop.getProperty("Email"));
+		homepage.sendsubscriptionemail(prop.getProperty("Email")); /*Couldn't insert assert as SMS validation is not 
+		                                                            getting displayed against which assert could be inserted*/
 	}
 
 	@Test(priority = 19)
 	public void navigatefooterFAQtest() throws InterruptedException {
 		fAQPage = homepage.clickFAQlink();
+		Assert.assertTrue(driver.findElement(By.xpath("//div[@class='faq_banner_content']"
+				+ "//h1[contains(text(),'FAQ')]")).isDisplayed(), "FAQ page label not displayed");
 		Thread.sleep(1500);
 	}
 
 	@Test(priority = 20)
 	public void navigatefooterTandctest() throws InterruptedException {
-		homepage.clickTandClink();
+		boolean title=homepage.clickTandClink();
+		Assert.assertTrue(title, "TandC page label not displayed");
 		Thread.sleep(1500);
 	}
 
 	@Test(priority = 21)
 	public void navigatefooterPrivacypolicytest() throws InterruptedException {
-		homepage.clickPrivacypolicylink();
+		boolean title=homepage.clickPrivacypolicylink();
+		Assert.assertTrue(title, "Privacy policy page label not displayed");
 		Thread.sleep(1500);
 	}
 
 	@Test(priority = 22)
 	public void navigatefooterContactustest() throws InterruptedException {
 		contactus = homepage.clickContactuslink();
+		Assert.assertTrue(driver.findElement(By.xpath("//div[@class='container']"
+				+ "//h3[contains(@class,'contact-heading') and contains(text(),'Contact us')]")).isDisplayed(), "Contact US page label not displayed");
 		Thread.sleep(1500);
 	}
 
 	@Test(priority = 23)
 	public void navigatefooterPartnerwithustest() throws InterruptedException {
 		partnerwithus = homepage.clickPartnerwithuslink();
+		Assert.assertTrue(driver.findElement(By.xpath("//div[@class='container']"
+				+ "//h3[contains(@class,'contact-heading') and contains(text(),'Submit Your Query')]")).isDisplayed(), "Partner with US page label not displayed");
 		Thread.sleep(1500);
 	}
 
 	@Test(priority = 24)
 	public void navigateInstasocialpagetest() throws InterruptedException {
-		homepage.clickInstasociallink();
+		String title=homepage.clickInstasociallink();
+		System.out.println("Title: "+title);
+		Assert.assertTrue(title.contains("Instagram photos and videos"),"Instagram page title not matched");
 		Thread.sleep(1500);
 	}
 
 	@Test(priority = 25)
 	public void navigateFBsocialpagetest() throws InterruptedException {
-		homepage.clickFBsociallink();
+		String title=homepage.clickFBsociallink();
+		Assert.assertEquals(title,"The LuxePass - Home | Facebook","FB page title not matched");
 		Thread.sleep(1500);
 	}
 

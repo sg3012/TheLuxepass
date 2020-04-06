@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [TheLuxepass_web_app_test_Automation_suite]">
-  <test thread-count="5" name="TheLuxepass_app_test_cases(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
       <class name="com.luxepass.qa.tests.HomePageflowtest">
         <methods>
-          <include name="navigateInstasocialpagetest"/>
+          <include name="howitworkstest"/>
           <include name="teardown"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- com.luxepass.qa.tests.HomePageflowtest -->
     </classes>
-  </test> <!-- TheLuxepass_app_test_cases(failed) -->
-</suite> <!-- Failed suite [TheLuxepass_web_app_test_Automation_suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
