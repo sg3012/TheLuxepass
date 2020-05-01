@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [TheLuxepass web app test Automation suite]">
+  <test thread-count="5" name="TheLuxepass app test cases(failed)">
+    <classes>
+      <class name="com.luxepass.qa.tests.HomePageflowtest">
+        <methods>
+          <include name="aboutusvideotest"/>
+          <include name="sendemailpplinktest"/>
+          <include name="sendsubscribeemailtest"/>
+          <include name="navigatefooterPartnerwithustest"/>
+          <include name="myaccounttest"/>
+          <include name="navigateInstasocialpagetest"/>
+          <include name="teardown"/>
+          <include name="setUp"/>
+          <include name="navigateFBsocialpagetest"/>
+        </methods>
+      </class> <!-- com.luxepass.qa.tests.HomePageflowtest -->
+    </classes>
+  </test> <!-- TheLuxepass app test cases(failed) -->
+</suite> <!-- Failed suite [TheLuxepass web app test Automation suite] -->

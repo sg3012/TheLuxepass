@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="TheLuxepass_web_app_test_Automation_suite" duration-ms="21734" started-at="2020-04-06T20:54:44 IST" finished-at="2020-04-06T20:55:06 IST">
+    <groups>
+    </groups>
+    <test name="TheLuxepass_app_test_cases" duration-ms="21734" started-at="2020-04-06T20:54:44 IST" finished-at="2020-04-06T20:55:06 IST">
+      <class name="com.luxepass.qa.tests.HomePageflowtest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.luxepass.qa.tests.HomePageflowtest@30b8a058]" name="setUp" is-config="true" duration-ms="15208" started-at="2020-04-06T20:54:45 IST" finished-at="2020-04-06T20:55:00 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="navigateInstasocialpagetest()[pri:24, instance:com.luxepass.qa.tests.HomePageflowtest@30b8a058]" name="navigateInstasocialpagetest" duration-ms="5733" started-at="2020-04-06T20:55:00 IST" finished-at="2020-04-06T20:55:05 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateInstasocialpagetest -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.luxepass.qa.tests.HomePageflowtest@30b8a058]" name="teardown" is-config="true" duration-ms="747" started-at="2020-04-06T20:55:05 IST" finished-at="2020-04-06T20:55:06 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.luxepass.qa.tests.HomePageflowtest -->
+    </test> <!-- TheLuxepass_app_test_cases -->
+  </suite> <!-- TheLuxepass_web_app_test_Automation_suite -->
+</testng-results>
