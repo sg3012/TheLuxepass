@@ -1,13 +1,17 @@
 package com.luxepass.qa.tests;
+import java.util.ArrayList;
+import java.util.Iterator;
 
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.luxepass.qa.base.TestBase;
 import com.luxepass.qa.pages.HomePage;
 import com.luxepass.qa.pages.LoginPage;
 import com.luxepass.qa.pages.SignUppage;
+import com.luxepass.qa.util.Getexceldata;
 
 public class Signuppageflowtest extends TestBase {
 	SignUppage signuppage; /*
@@ -91,15 +95,24 @@ public class Signuppageflowtest extends TestBase {
     	loginpage=signuppage.resendcode(prop.getProperty("Email"));	
     	Thread.sleep(2000);
     }
-    @Test(priority=9)
-    public void signupPagesignuptest() throws InterruptedException
+    @Test(priority=9, dataProvider="getTestdata")
+    public void signupPagesignuptest(String firstname,String laststname,String email, String pwd,String confirmpass) throws InterruptedException
     {
- 	   loginpage=signuppage.signup(prop.getProperty("firstname"),prop.getProperty("lastname"),prop.getProperty("Email")
- 			                      ,prop.getProperty("password"),prop.getProperty("confirmpassword"));
+ 	   loginpage=signuppage.signup(firstname,laststname,email,pwd,confirmpass);
 // 	  homepage=signuppage.signup();
  	   Thread.sleep(2000);
  	   
     }
+    
+    @DataProvider
+	
+	public Iterator<Object[]> getTestdata() {
+		
+	ArrayList<Object[]> testdata= Getexceldata.fetchdata();
+	
+	return testdata.iterator();
+	
+	}
 
     @AfterMethod
     public void teardown()

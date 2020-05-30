@@ -204,12 +204,12 @@ public class SignUppage extends TestBase {
 			store = session.getStore("imaps");
 
 			// Connect to the imap server :
-			store.connect("imap.gmail.com", prop.getProperty("username"), prop.getProperty("passphrase"));
+			store.connect("imap.gmail.com", email, password);
 
 			// Create Folder class object of type "INBOX" :
 			folder = store.getFolder("Inbox");
 
-			// Open the folder in Read Only mode :
+			// Open the folder in Read-write Only mode :
 			folder.open(Folder.READ_WRITE);
 
 			// Retrieve the Unseen messages in an array of type Message :
@@ -225,10 +225,15 @@ public class SignUppage extends TestBase {
 
 			loginsignupbtn.click();
 			signuplink.click();
+			firstnameinput.clear();
 			firstnameinput.sendKeys(firstname);
+			lastnameinput.clear();
 			lastnameinput.sendKeys(lastname);
+			emailinput.clear();
 			emailinput.sendKeys(email);
+			enterpasswordinput.clear();
 			enterpasswordinput.sendKeys(password);
+			enterconfirmpasswordinput.clear();
 			enterconfirmpasswordinput.sendKeys(confirmpassword);
 
 			clickTandC_Checkbox(tandccheckbox, driver);
@@ -346,6 +351,7 @@ public class SignUppage extends TestBase {
 		}
 
 		System.out.println("Verify button visibility: " + verifybtn.isDisplayed());
+		otpinput.clear();
 		otpinput.sendKeys(OTP);
 		clickverifybutton(verifybtn, driver);
 		return new LoginPage();
